@@ -1,6 +1,6 @@
-const RentEezNFT = artifacts.require("./RentEezNFT");
+const NFTAuction = artifacts.require("./NFTAuction");
 module.exports = function (deployer) {
   deployer.then(async () => {
-    await deployer.deploy(RentEezNFT);
+	  await deployer.deploy(NFTAuction);
   })
 };
