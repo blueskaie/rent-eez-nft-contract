@@ -1,5 +1,6 @@
-const Migrations = artifacts.require("Migrations");
-
+const NFTAuction = artifacts.require("NFTAuction");
 module.exports = function (deployer) {
-  deployer.deploy(Migrations);
+  deployer.then(async () => {
+	  await deployer.deploy(NFTAuction);
+  })
 };
